@@ -1,9 +1,9 @@
-import { Nav, Hero, About, Footer } from "./components/index.js";
+import { Nav, Hero, About, Footer } from "../sections/index.js";
 
 function App() {
   return (
     <>
-      <section>
+      <section className="">
         <Nav />
       </section>
       <section>
