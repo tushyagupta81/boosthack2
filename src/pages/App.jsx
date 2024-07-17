@@ -2,11 +2,9 @@ import { Nav, Hero, About, Footer } from "../sections/index.js";
 
 function App() {
   return (
-    <>
-      <section className="">
-        <Nav />
-      </section>
-      <section>
+    <main className="relative">
+      <Nav />
+      <section className="pt-8">
         <Hero />
       </section>
       <section>
@@ -15,7 +13,7 @@ function App() {
       <section>
         <Footer />
       </section>
-    </>
+    </main>
   );
 }
 
