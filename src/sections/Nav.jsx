@@ -1,6 +1,6 @@
 const Nav = () => {
   return (
-    <header className="py-6 absolute z-10 w-full px-4 bg-sky-100">
+    <header className="py-6 absolute z-10 w-full px-4 bg-blue-400">
       <nav className="flex justify-between items-center">
         <div className="ml-5 cursor-pointer">
           <img
@@ -11,7 +11,7 @@ const Nav = () => {
             className="rounded-full"
           />
         </div>
-        <ul className="flex gap-16 text-xl font-sans max-lg:hidden">
+        <ul className="flex gap-16 text-xl font-sans max-md:hidden">
           <li>Home</li>
           <li>About us</li>
           <li>Contact us</li>
