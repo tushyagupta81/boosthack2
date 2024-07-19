@@ -19,7 +19,7 @@ const Nav = () => {
         <div className="flex gap-5 mr-5 max-md:hidden text-xl cursor-pointer">
           <div>Login</div>
         </div>
-        <div className="hidden max-md:block">hamburger</div>
+        <div className="hidden max-md:block">haburger</div>
       </nav>
     </header>
   );
