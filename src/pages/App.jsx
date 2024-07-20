@@ -4,7 +4,7 @@ function App() {
   return (
     <main className="relative">
       <Nav />
-      <section className="pt-8">
+      <section className="">
         <Hero />
       </section>
       <section>
