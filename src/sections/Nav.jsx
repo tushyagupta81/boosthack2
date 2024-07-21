@@ -1,6 +1,6 @@
 const Nav = () => {
   return (
-    <header className="fixed top-0 left-0 py-6  z-10 w-full px-4 bg-blue-700">
+    <header className="py-6 z-10 w-full px-4">
       <nav className="flex justify-between items-center mx-auto">
         <div className="ml-5 cursor-pointer">
           <img
@@ -11,9 +11,15 @@ const Nav = () => {
           />
         </div>
         <ul className="flex gap-16 text-xl font-sans max-md:hidden">
-          <li className="cursor-pointer">Home</li>
-          <li className="cursor-pointer">About us</li>
-          <li className="cursor-pointer">Contact us</li>
+          <li className="cursor-pointer">
+            <a href="#home">Home</a>
+          </li>
+          <li className="cursor-pointer">
+            <a href="#about-us">About us</a>
+          </li>
+          <li className="cursor-pointer">
+            <a href="#contact-us">Contact us</a>
+          </li>
         </ul>
         <div className="flex gap-5 mr-5 max-md:hidden text-xl cursor-pointer">
           <div>Login</div>
