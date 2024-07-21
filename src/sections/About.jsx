@@ -5,7 +5,7 @@ const About = () => {
       id="about-us"
     >
       <h2 className="mr-4 text-blue-600 p-2 text-3xl font-bold whitespace-nowrap">
-        About us
+        About Us
       </h2>
       <div className="border-l-2 rounded-sm p-4 text-lg">
         <p className="">
