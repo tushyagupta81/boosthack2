@@ -1,4 +1,4 @@
-import { Nav, Hero, About, Footer } from "../sections/index.js";
+import { Nav, Hero, About, JoinUs, Footer } from "../sections/index.js";
 
 function App() {
   return (
@@ -9,6 +9,9 @@ function App() {
       </section>
       <section>
         <About />
+      </section>
+      <section>
+        <JoinUs />
       </section>
       <section>
         <Footer />
