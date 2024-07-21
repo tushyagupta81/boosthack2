@@ -5,14 +5,14 @@ const Nav = () => {
   function showHamburger() {
     if (hamburgerClasses === "hidden") {
       setHamburgerClasses(
-        "p-4 border-2 border-black mt-4 rounded-none w-fit float-right md:hidden",
+        "p-4 border-2 border-blue-800 mt-4 rounded-2xl w-fit float-right md:hidden",
       );
     } else {
       setHamburgerClasses("hidden");
     }
   }
   return (
-    <header className="py-6 z-10 w-full px-4">
+    <header className="py-6 z-10 w-full px-4 fixed">
       <nav className="flex justify-between items-center mx-auto">
         <div className="ml-5 cursor-pointer">
           <img
@@ -30,13 +30,13 @@ const Nav = () => {
             <a href="#home">Home</a>
           </li>
           <li className="cursor-pointer">
-            <a href="#about-us">About us</a>
+            <a href="#about-us">About</a>
           </li>
           <li className="cursor-pointer">
             <a href="#join-us">Join us</a>
           </li>
           <li className="cursor-pointer">
-            <a href="#contact-us">Contact us</a>
+            <a href="#contact-us">Contact</a>
           </li>
         </ul>
         <div className="flex gap-5 mr-5 max-md:hidden text-xl cursor-pointer">
