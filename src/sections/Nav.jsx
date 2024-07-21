@@ -5,7 +5,7 @@ const Nav = () => {
   function showHamburger() {
     if (hamburgerClasses === "hidden") {
       setHamburgerClasses(
-        "p-4 border-2 border-black mt-4 rounded-md w-fit float-right md:hidden",
+        "p-4 border-2 border-black mt-4 rounded-none w-fit float-right md:hidden",
       );
     } else {
       setHamburgerClasses("hidden");
@@ -54,17 +54,17 @@ const Nav = () => {
         </div>
       </nav>
       <div className={hamburgerClasses}>
-        <ul className="gap-20 text-xl font-sans text-right">
-          <li className="cursor-pointer border-b-2 border-b-gray-300">
+        <ul className=" gap-20 text-xl font-sans text-right">
+          <li className="cursor-pointer mb-10 mr-8 ml-3">
             <a href="#home">Home</a>
           </li>
-          <li className="cursor-pointer border-b-2 border-b-gray-300">
+          <li className="cursor-pointer mb-10 mr-8 ml-3">
             <a href="#about-us">About us</a>
           </li>
-          <li className="cursor-pointer border-b-2 border-b-gray-300">
+          <li className="cursor-pointer mb-10 mr-8 ml-3">
             <a href="#join-us">Join us</a>
           </li>
-          <li className="cursor-pointer">
+          <li className="cursor-pointer mb-10 mr-8 ml-3">
             <a href="#contact-us">Contact us</a>
           </li>
         </ul>
