@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import hamburger from "../assets/icons/hamburger.svg";
 import { useState } from "react";
 const Nav = () => {
@@ -40,7 +41,7 @@ const Nav = () => {
           </li>
         </ul>
         <div className="flex gap-5 mr-5 max-md:hidden text-xl cursor-pointer">
-          <div href="pages/login.jsx">Login</div>
+          <Link to={"./login"}>Login</Link>
         </div>
         <div className="hidden max-md:block">
           <button aria-controls="nav-items" aria-expanded="false">
@@ -68,7 +69,7 @@ const Nav = () => {
             <a href="#contact-us">Contact us</a>
           </li>
           <li className="cursor-pointer mb-10">
-            <a>Login</a>
+          <Link to={"./login"}>Login</Link>
           </li>
         </ul>
       </div>
