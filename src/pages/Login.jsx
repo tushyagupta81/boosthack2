@@ -3,7 +3,7 @@ import { Nav } from "../sections/index.js";
 const Login = () => {
   return (
     <>
-      <form class="bg-gray-100 flex items-center justify-center min-h-screen  p-6 rounded-lg shadow-md w-full max-w-sm">
+      <form class="bg-gray-100 flex items-center justify-center min-h-screen  p-6 rounded-lg shadow-md w-full max-w-sm mt-40 mb-40">
       <div>
           <header class="text-2xl font-bold mb-4">Sign In </header>
           <p class="mb-4 text-gray-600">If you already have an account sign in here.</p>
