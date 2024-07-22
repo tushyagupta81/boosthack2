@@ -5,13 +5,13 @@ const Signup = () => {
   return (
     <>
       <Nav page="signup" />
-      <form className="bg-gray-50 flex items-center justify-center min-h-screen p-6 rounded-lg shadow-md w-full">
+      <form className="bg-gradient-to-b from-blue-100 to-blue-600 flex items-center justify-center min-h-screen p-6 rounded-lg shadow-md w-full">
         <div>
           <header className="text-2xl font-bold mb-4">Sign Up</header>
-          <p className="mb-4 text-gray-600">
+          <p className="mb-4 text-black">
             If you already have an account sign in{" "}
             <span className="underline text-[#0000EE]">
-              <Link to="/login">here</Link>
+              <Link to="/Signin">here</Link>
             </span>
             .
           </p>
@@ -24,7 +24,7 @@ const Signup = () => {
               placeholder="Enter Email"
               name="email"
               required
-              className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-indigo-500"
+              className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-300"
             />
           </div>
           <div className="mb-4">
@@ -36,7 +36,7 @@ const Signup = () => {
               placeholder="Enter Username"
               name="uname"
               required
-              className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-indigo-500"
+              className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-300"
             />
           </div>
           <div className="mb-4">
@@ -48,13 +48,13 @@ const Signup = () => {
               placeholder="Enter Password"
               name="psw"
               required
-              className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-indigo-500"
+              className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-300"
             />
           </div>
           <div className="flex items-center justify-between mb-4">
             <button
               type="submit"
-              className="bg-indigo-500 text-white px-4 py-2 rounded-lg hover:bg-indigo-600 focus:outline-none"
+              className="bg-blue-800 text-white px-4 py-2 rounded-lg hover:bg-blue-400 hover:text-black focus:outline-none"
             >
               Create Account
             </button>
