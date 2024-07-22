@@ -1,5 +1,6 @@
 import App from "./App.jsx";
-import Login from "./Login.jsx";
+import Signin from "./Signin.jsx";
 import Dashboard from "./Dashboard.jsx";
+import Signup from "./Signup.jsx";
 
-export { App, Login, Dashboard };
+export { App, Signin, Dashboard, Signup };

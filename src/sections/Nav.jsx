@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom";
 import hamburger from "../assets/icons/hamburger.svg";
 import { useState } from "react";
-const Nav = () => {
+
+// eslint-disable-next-line react/prop-types
+function Nav({ page }) {
   const [hamburgerClasses, setHamburgerClasses] = useState("hidden");
   function showHamburger() {
     if (hamburgerClasses === "hidden") {
-      setHamburgerClasses(
-        "p-4 mt-4 rounded-2xl w-fit float-right md:hidden",
-      );
+      setHamburgerClasses("p-4 mt-4 rounded-2xl w-fit float-right md:hidden");
     } else {
       setHamburgerClasses("hidden");
     }
@@ -16,32 +16,38 @@ const Nav = () => {
     <header className="py-6 z-10 w-full px-4 ">
       <nav className="flex justify-between items-center mx-auto">
         <div className="ml-5 cursor-pointer">
-          <img
-            src="https://cdn.dribbble.com/users/8322394/screenshots/16257129/media/52e02c3a2da5974e1f9d0d27de7ae5cb.jpg"
-            alt="random logo"
-            width={80}
-            className="rounded-full"
-          />
+          <Link to="/">
+            <img
+              src="https://cdn.dribbble.com/users/8322394/screenshots/16257129/media/52e02c3a2da5974e1f9d0d27de7ae5cb.jpg"
+              alt="random logo"
+              width={80}
+              className="rounded-full"
+            />
+          </Link>
         </div>
-        <ul
-          className="flex gap-16 text-xl font-sans max-md:hidden"
-          id="nav-items"
-        >
-          <li className="cursor-pointer">
-            <a href="#home">Home</a>
-          </li>
-          <li className="cursor-pointer">
-            <a href="#about-us">About</a>
-          </li>
-          <li className="cursor-pointer">
-            <a href="#join-us">Join us</a>
-          </li>
-          <li className="cursor-pointer">
-            <a href="#contact-us">Contact</a>
-          </li>
-        </ul>
+        {page === "home" && (
+          <ul
+            className="flex gap-16 text-xl font-sans max-md:hidden"
+            id="nav-items"
+          >
+            <li className="cursor-pointer">
+              <a href="#home">Home</a>
+            </li>
+            <li className="cursor-pointer">
+              <a href="#about-us">About</a>
+            </li>
+            <li className="cursor-pointer">
+              <a href="#join-us">Join us</a>
+            </li>
+            <li className="cursor-pointer">
+              <a href="#contact-us">Contact</a>
+            </li>
+          </ul>
+        )}
         <div className="flex gap-5 mr-5 max-md:hidden text-xl cursor-pointer">
-          <Link to={"./login"}>Login</Link>
+          {page === "home" && <Link to="/signin">Login</Link>}
+          {page === "signin" && <Link to="/signup">Signup</Link>}
+          {page === "signup" && <Link to="/signin">Signin</Link>}
         </div>
         <div className="hidden max-md:block">
           <button aria-controls="nav-items" aria-expanded="false">
@@ -69,12 +75,12 @@ const Nav = () => {
             <a href="#contact-us">Contact us</a>
           </li>
           <li className="cursor-pointer mb-10">
-          <Link to={"./login"}>Login</Link>
+            <Link to={"./login"}>Login</Link>
           </li>
         </ul>
       </div>
     </header>
   );
-};
+}
 
 export default Nav;

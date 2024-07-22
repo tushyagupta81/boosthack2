@@ -3,7 +3,7 @@ import { Nav, Hero, About, JoinUs, Footer } from "../sections/index.js";
 function App() {
   return (
     <main className="relative">
-      <Nav />
+      <Nav page="home" />
       <section className="">
         <Hero />
       </section>
