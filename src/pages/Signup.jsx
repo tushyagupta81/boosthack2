@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 const Signup = () => {
   return (
     <>
-      <Nav page="signup" />
       <form className="bg-gradient-to-b from-blue-100 to-blue-600 flex items-center justify-center min-h-screen p-6 rounded-lg shadow-md w-full">
         <div>
           <header className="text-2xl font-bold mb-4">Sign Up</header>

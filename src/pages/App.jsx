@@ -1,4 +1,5 @@
 import { Nav, Hero, About, JoinUs, Footer } from "../sections/index.js";
+import React, { useState } from 'react';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Footer />
       </section>
     </main>
+
   );
 }
 
