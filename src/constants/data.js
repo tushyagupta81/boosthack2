@@ -2,9 +2,13 @@ const data = [
   {
     id: 1,
     title: "Stock Market Basics",
-    info: [
-     " start with this module if you are a market newbie.This module will help you understand the market basics including the IPO Markets,commonly used jargons,trading faTerminal,market events",
-    ],
+    info: {
+      id:1,
+      title:"titel",
+      info:[
+        "kw"
+      ]
+    }
   },
   {
     id: 2,
