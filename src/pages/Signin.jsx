@@ -1,11 +1,28 @@
 import { Nav } from "../sections/index.js";
 import { Link } from "react-router-dom";
+import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+const Login = ({ setAuth }) => {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const navigate = useNavigate();}
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Basic validation and mock authentication
+    if (email === 'user@example.com' && password === 'password') {
+      setAuth(true);
+      navigate('/Dashboard');
+    } else {
+      alert('Invalid credentials');
+    }
+  };
 
 const Signin = () => {
   return (
     <>
-      <Nav page="signin" />
-      <form className="bg-gradient-to-b from-blue-100 to-blue-600 flex items-center justify-center min-h-screen p-6 rounded-lg shadow-md w-full">
+      
+      <form className="bg-gradient-to-b from-blue-100 to-blue-600 flex items-center justify-center min-h-screen p-6 rounded-lg shadow-md w-full" onSubmit={handleSubmit}>
         <div>
           <header className="text-2xl font-bold mb-4">Sign In</header>
           <p className="mb-4 text-gray-600">
@@ -16,15 +33,16 @@ const Signin = () => {
             .
           </p>
           <div className="mb-4">
-            <label htmlFor="uname" className="block text-gray-700 mb-2">
-              Username
+            <label htmlFor="email" className="block text-gray-700 mb-2">
+              Email
             </label>
             <input
-              type="text"
-              placeholder="Enter Username"
-              name="uname"
+              type="email"
+              placeholder="Enter email"
               required
               className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-indigo-500"
+              
+              onChange={(e) => setEmail(e.target.value)}
             />
           </div>
           <div className="mb-4">
@@ -34,9 +52,10 @@ const Signin = () => {
             <input
               type="password"
               placeholder="Enter Password"
-              name="psw"
-              required
               className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-indigo-500"
+              
+              onChange={(e) => setPassword(e.target.value)}
+
             />
           </div>
           <div className="flex items-center justify-between mb-4">
