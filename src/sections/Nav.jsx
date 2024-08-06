@@ -1,19 +1,22 @@
 import { Link } from "react-router-dom";
 import hamburger from "../assets/icons/hamburger.svg";
 import { useState } from "react";
+import navlinks from "../constants/navlinks.js";
 
 // eslint-disable-next-line react/prop-types
 function Nav({ page }) {
   const [hamburgerClasses, setHamburgerClasses] = useState("hidden");
   function showHamburger() {
     if (hamburgerClasses === "hidden") {
-      setHamburgerClasses("p-4 mt-4 rounded-2xl w-fit float-right md:hidden");
+      setHamburgerClasses(
+        "p-4 mt-4 rounded-2xl w-fit float-right md:hidden border border-black rounded-md w-fit px-4 py-2",
+      );
     } else {
       setHamburgerClasses("hidden");
     }
   }
   return (
-    <header className="py-6 z-10 w-full px-4 ">
+    <header className="py-6 z-10 w-full px-4">
       <nav className="flex justify-between items-center mx-auto">
         <div className="ml-5 cursor-pointer">
           <Link to="/">
@@ -25,25 +28,20 @@ function Nav({ page }) {
             />
           </Link>
         </div>
-        {page === "home" && (
-          <ul
-            className="flex gap-16 text-xl font-sans max-md:hidden"
-            id="nav-items"
-          >
-            <li className="cursor-pointer">
-              <a href="#home">Home</a>
-            </li>
-            <li className="cursor-pointer">
-              <a href="#about-us">About</a>
-            </li>
-            <li className="cursor-pointer">
-              <a href="#join-us">Join us</a>
-            </li>
-            <li className="cursor-pointer">
-              <a href="#contact-us">Contact</a>
-            </li>
-          </ul>
-        )}
+        <ul
+          className="flex gap-16 text-xl font-sans max-md:hidden"
+          id="nav-items"
+        >
+          {navlinks.map((obj) => {
+            if (obj.pageName === page) {
+              return obj.links.map((obj, index) => (
+                <li key={index} className="cursor-pointer">
+                  <a href={obj.link}>{obj.title}</a>
+                </li>
+              ));
+            }
+          })}
+        </ul>
         <div className="flex gap-5 mr-5 max-md:hidden text-xl cursor-pointer">
           {page === "home" && <Link to="/signin">Login</Link>}
           {page === "signin" && <Link to="/signup">Signup</Link>}
@@ -61,20 +59,17 @@ function Nav({ page }) {
         </div>
       </nav>
       <div className={hamburgerClasses}>
-        <ul className=" gap-20 text-xl font-sans text-right">
-          <li className="cursor-pointer mb-10">
-            <a href="#home">Home</a>
-          </li>
-          <li className="cursor-pointer mb-10">
-            <a href="#about-us">About us</a>
-          </li>
-          <li className="cursor-pointer mb-10">
-            <a href="#join-us">Join us</a>
-          </li>
-          <li className="cursor-pointer mb-10">
-            <a href="#contact-us">Contact us</a>
-          </li>
-          <li className="cursor-pointer mb-10">
+        <ul className="text-xl font-sans text-right">
+          {navlinks.map((obj) => {
+            if (obj.pageName === page) {
+              return obj.links.map((obj, index) => (
+                <li key={index} className="cursor-pointer py-1">
+                  <a href={obj.link}>{obj.title}</a>
+                </li>
+              ));
+            }
+          })}
+          <li className="cursor-pointer">
             <Link to={"./login"}>Login</Link>
           </li>
         </ul>
