@@ -161,7 +161,7 @@ const Stock_market_basics = () => {
       {/* chapter -2 */}
 
       <div className="Regulators, the guardians of capital markets">
-        {/* toppic -1 */}
+        {/* topic -1 */}
         <div className="What is the stock market?">
           <h2>What is the stock market?</h2>
           <p>
@@ -341,7 +341,7 @@ const Stock_market_basics = () => {
               </li>
               <li></li>
             </ul>
-          </p>
+          </p>~
           <p>
             The essential services provided by the broker include....
             <ul>
