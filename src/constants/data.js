@@ -47,4 +47,4 @@ const lessons = [
   },
 ];
 
-export { chapters, submodules, lessons };
+export default { chapters, submodules, lessons };

@@ -1,4 +1,4 @@
-import data from "../constants/data.js";
+import chapters from "../constants/data.js";
 import { Nav } from "../sections/index.js";
 
 const Dashboard = () => {
@@ -10,7 +10,7 @@ const Dashboard = () => {
           <h2 className="text-2xl font-bold mb-6 text-center">
             Welcome to the Dashboard!
           </h2>
-          {data.map((obj) => (
+          {chapters.map((obj) => (
             <div
               key={obj.id}
               className="border-black rounded-md border my-4 p-2 shadow-md px-6 py-4"
