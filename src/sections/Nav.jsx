@@ -34,11 +34,21 @@ function Nav({ page }) {
         >
           {navlinks.map((obj) => {
             if (obj.pageName === page) {
-              return obj.links.map((obj, index) => (
-                <li key={index} className="cursor-pointer">
-                  <a href={obj.link}>{obj.title}</a>
-                </li>
-              ));
+              return obj.links.map((obj, index) => {
+                if (obj.link[0] === "#") {
+                  return (
+                    <li key={index} className="cursor-pointer">
+                      <a href={obj.link}>{obj.title}</a>
+                    </li>
+                  );
+                } else {
+                  return (
+                    <li key={index} className="cursor-pointer">
+                      <Link to={obj.link}>{obj.title}</Link>
+                    </li>
+                  );
+                }
+              });
             }
           })}
         </ul>

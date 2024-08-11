@@ -18,6 +18,10 @@ const navlinks = [
         title: "Contact",
         link: "#contact-us",
       },
+      {
+        title: "Dashboard",
+        link: "/dashboard",
+      },
     ],
   },
 ];
