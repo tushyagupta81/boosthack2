@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import hamburger from "../assets/icons/hamburger.svg";
 import { useState } from "react";
-import navlinks from "../constants/navlinks.js";
+import { navlinks } from "../constants/index.js";
 
 // eslint-disable-next-line react/prop-types
 function Nav({ page }) {
