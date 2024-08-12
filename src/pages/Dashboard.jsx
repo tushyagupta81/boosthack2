@@ -1,28 +1,25 @@
 import { dashboard } from "../constants/index.js";
 import { Link } from "react-router-dom";
 import { Nav } from "../sections/index.js";
+import { Card } from "../components";
 
 const Dashboard = () => {
   return (
     <>
       <Nav />
-      <div className="flex items-center justify-center bg-gray-100">
-        <div className="bg-white p-8 rounded-lg shadow-md w-full">
-          <h2 className="text-2xl font-bold mb-6 text-center">
+      <div className="flex items-center justify-center bg-gray-100 mb-4">
+        <div className="bg-white p-8 shadow-md w-full">
+          <h2 className="text-4xl font-bold mb-6 text-center">
             Welcome to the Dashboard!
           </h2>
-          {chapters.map((obj) => (
-            <div
-              key={obj.id}
-              className="border-black rounded-md border my-4 p-2 shadow-md px-6 py-4"
-            >
-              <h2 className="font-bold text-2xl">{obj.title}</h2>
-              {obj.info.map((para, index) => (
-                <p key={index}>{para}</p>
-              ))}
-            </div>
-          ))}
         </div>
+      </div>
+      <div className="flex flex-col w-[90%] gap-4 m-auto">
+        {dashboard.map((obj, index) => (
+          <Link to={obj.id === 1 ? "/chapters" : "/tools"} key={index}>
+            <Card data={obj} />
+          </Link>
+        ))}
       </div>
     </>
   );
