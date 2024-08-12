@@ -63,7 +63,7 @@ const Signin = () => {
               type="submit"
               className="bg-blue-800 text-white px-4 py-2 rounded-lg hover:bg-blue-600 hover:text-black focus:outline-none"
             >
-              Login
+             <Link to={"/dashboard"}>Login</Link>
             </button>
             <label>
               <input
