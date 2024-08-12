@@ -80,7 +80,7 @@ function Nav({ page }) {
             }
           })}
           <li className="cursor-pointer">
-            <Link to={"./signin"}>Login</Link>
+            <Link to={"./login"}>Login</Link>
           </li>
         </ul>
       </div>
