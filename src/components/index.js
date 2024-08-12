@@ -1,3 +1,4 @@
 import Button from "./Button.jsx";
+import Card from "./Card.jsx";
 
-export { Button };
+export { Button, Card };
