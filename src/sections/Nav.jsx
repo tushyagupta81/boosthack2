@@ -20,12 +20,21 @@ function Nav({ page }) {
       <nav className="flex justify-between items-center mx-auto">
         <div className="ml-5 cursor-pointer">
           <Link to="/">
-            <img
-              src="https://cdn.dribbble.com/users/8322394/screenshots/16257129/media/52e02c3a2da5974e1f9d0d27de7ae5cb.jpg"
-              alt="random logo"
-              width={80}
-              className="rounded-full"
-            />
+          <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                stroke="currentColor"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                className="w-10 h-10 text-white p-2 bg-blue-500 rounded-full"
+                viewBox="0 0 24 24"
+              >
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+              </svg>
+              <span className="ml-3 text-xl">CoinEd</span>
+            </a>
           </Link>
         </div>
         <ul
