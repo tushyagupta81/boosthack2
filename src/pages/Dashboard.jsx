@@ -62,7 +62,7 @@ const Dashboard = () => {
           </h2>
         </div>
       </div>
-      <div className="flex flex-col items-center align-middle w-[100%] gap-5 m-auto">
+      <div className=" flex flex-col w-[90%] gap-4 m-auto">
         {dashboard.map((obj, index) => (
           <Link to={obj.id === 1 ? "/chapters" : "/tools"} key={index}>
             <Card data={obj} />

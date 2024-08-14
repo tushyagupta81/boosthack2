@@ -66,7 +66,7 @@ const Dashboard = () => {
       </div>
       <div className="flex flex-col w-[90%] gap-4 m-auto">
         {submodules.map((obj, index) => {
-          if (obj.chapterId === parseInt(id)) {
+          if (obj.moduleId === parseInt(id)) {
             return (
               <Link to={`${obj.id}`} key={index}>
                 <Card data={obj} />

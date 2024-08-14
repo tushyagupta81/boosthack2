@@ -1,7 +1,7 @@
 import dashboard from "./dashboard.js";
-import chapters from "./chapters.js";
+import modules from "./module.js";
 import submodules from "./submodules.js";
 import lessons from "./lessons.js";
 import navlinks from "./navlinks.js";
 
-export { chapters, submodules, lessons, dashboard, navlinks };
+export { modules, submodules, lessons, dashboard, navlinks };

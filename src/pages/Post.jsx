@@ -12,7 +12,7 @@ const Post = () => {
 
   for (let i = 0; i < lessons.length; i++) {
     if (
-      lessons[i]["chapterId"] === parseInt(id) &&
+      lessons[i]["moduleId"] === parseInt(id) &&
       lessons[i]["submoduleId"] === parseInt(subId)
     ) {
       postData = lessons[i];
