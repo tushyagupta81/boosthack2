@@ -58,7 +58,7 @@ const Dashboard = () => {
       <div className="flex items-center bg-gray-100 mb-4">
         <div className="bg-white p-8 shadow-md w-full">
           <h2 className="text-4xl font-bold mb-6 text-center text-blue-500">
-            Welcome To <span className="text-blue-900 underline">CoinED</span> 
+            Welcome To <span className="text-blue-900 underline">CoinED</span>
           </h2>
         </div>
       </div>
@@ -69,7 +69,6 @@ const Dashboard = () => {
           </Link>
         ))}
       </div>
-      
     </>
   );
 };
