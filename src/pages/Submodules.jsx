@@ -1,4 +1,4 @@
-import { submodules, chapters} from "../constants/index.js";
+import { submodules, modules } from "../constants/index.js";
 import { Link } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import { Nav } from "../sections/index.js";
@@ -8,7 +8,7 @@ const Dashboard = () => {
   let id = useParams()["id"];
   return (
     <>
-       <section>
+      <section>
         <header className="text-gray-600 body-font">
           <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
             <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
@@ -60,7 +60,7 @@ const Dashboard = () => {
       <div className="flex items-center justify-center bg-gray-100 mb-4">
         <div className="bg-white p-8 shadow-md w-full">
           <h2 className="text-4xl font-bold mb-6 text-center">
-            Welcome to the {chapters[id].title}!
+            Welcome to the {modules[id].title}!
           </h2>
         </div>
       </div>

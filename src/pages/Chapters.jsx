@@ -1,4 +1,4 @@
-import { chapters } from "../constants/index.js";
+import { modules } from "../constants/index.js";
 import { Nav } from "../sections/index.js";
 import { Link } from "react-router-dom";
 import { Card } from "../components";
@@ -6,7 +6,7 @@ import { Card } from "../components";
 const Dashboard = () => {
   return (
     <>
-     <section>
+      <section>
         <header className="text-gray-600 body-font">
           <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
             <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
@@ -63,7 +63,7 @@ const Dashboard = () => {
         </div>
       </div>
       <div className="flex flex-col w-[90%] gap-4 m-auto">
-        {chapters.map((obj, index) => (
+        {modules.map((obj, index) => (
           <Link to={`${obj.id}/submodules`} key={index}>
             <Card data={obj} />
           </Link>
