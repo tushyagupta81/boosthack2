@@ -55,7 +55,7 @@ const Signup = () => {
               type="submit"
               className="bg-blue-800 text-white px-4 py-2 rounded-lg hover:bg-blue-400 hover:text-black focus:outline-none"
             >
-              Create Account
+              <Link to="/dashboard">Create Account</Link>
             </button>
           </div>
         </div>
