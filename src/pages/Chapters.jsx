@@ -57,15 +57,21 @@ const Dashboard = () => {
       </section>
       <div className="flex items-center justify-center bg-gray-100 mb-4">
         <div className="bg-white p-8 shadow-md w-full">
-          <h2 className="text-4xl font-bold mb-6 text-center">
-            Welcome to the Chapters!
+          <h2 className="text-4xl font-bold mb-6 text-center text-blue-500">
+            Welcome to the <span className="text-blue-900">Chapters!</span>
           </h2>
         </div>
       </div>
       <div className="flex flex-col w-[90%] gap-4 m-auto">
         {modules.map((obj, index) => (
           <Link to={`${obj.id}/submodules`} key={index}>
-            <Card data={obj} />
+            <div className="p-4 bg-white shadow-md rounded">
+              <h3 className="text-2xl font-bold">
+              <span className="text-blue-900">{obj.title}</span>
+              </h3>
+              <hr className="border-t-2 border-blue-600 my-4"></hr>
+              <p>{obj.info}</p>
+            </div>
           </Link>
         ))}
       </div>

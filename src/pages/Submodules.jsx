@@ -59,8 +59,8 @@ const Dashboard = () => {
       </section>
       <div className="flex items-center justify-center bg-gray-100 mb-4">
         <div className="bg-white p-8 shadow-md w-full">
-          <h2 className="text-4xl font-bold mb-6 text-center">
-            Welcome to the {modules[id].title}!
+          <h2 className="text-4xl font-bold mb-6 text-center text-blue-500">
+            Welcome to the <span className="text-blue-900">{modules[id].title}!</span>
           </h2>
         </div>
       </div>
@@ -69,7 +69,13 @@ const Dashboard = () => {
           if (obj.moduleId === parseInt(id)) {
             return (
               <Link to={`${obj.id}`} key={index}>
-                <Card data={obj} />
+               <div className="p-4 bg-white shadow-md rounded">
+              <h3 className="text-2xl font-bold">
+              <span className="text-blue-900">{obj.title}</span>
+              </h3>
+              <hr className="border-t-2 border-blue-600 my-4"></hr>
+              <p>{obj.info}</p>
+            </div>
               </Link>
             );
           }

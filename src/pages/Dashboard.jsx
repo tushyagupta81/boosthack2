@@ -65,7 +65,13 @@ const Dashboard = () => {
       <div className=" flex flex-col w-[90%] gap-4 m-auto">
         {dashboard.map((obj, index) => (
           <Link to={obj.id === 1 ? "/chapters" : "/tools"} key={index}>
-            <Card data={obj} />
+            <div className="p-4 bg-white shadow-md rounded">
+              <h3 className="text-2xl font-bold">
+              <span className="text-blue-900">{obj.title}</span>
+              </h3>
+              <hr className="border-t-2 border-blue-600 my-4"></hr>
+              <p>{obj.info}</p>
+            </div>
           </Link>
         ))}
       </div>
