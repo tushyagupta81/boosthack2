@@ -28,20 +28,17 @@ const Dashboard = () => {
             </a>
             <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
               <a className="mr-5 hover:text-gray-900 hover:cursor-pointer">
-                Home
+                <Link to="/dashboard">Dashboard</Link>
               </a>
               <a className="mr-5 hover:text-gray-900 hover:cursor-pointer">
-                Second Link
+                <Link to="/chapters">Chapters</Link>
               </a>
               <a className="mr-5 hover:text-gray-900 hover:cursor-pointer">
-                Third Link
-              </a>
-              <a className="mr-5 hover:text-gray-900 hover:cursor-pointer">
-                Fourth Link
+                <Link to="/submodules">Topic</Link>
               </a>
             </nav>
             <button className="inline-flex items-center bg-gray-100 border-2 py-1 px-3 focus:outline-none hover:bg-red-600 hover:text-white rounded text-base  mt-4 md:mt-0">
-              <Link>Log Out</Link>
+              <Link to="/app">Log Out</Link>
               <svg
                 fill="none"
                 stroke="currentColor"

@@ -22,6 +22,18 @@ const navlinks = [
         title: "Dashboard",
         link: "/dashboard",
       },
+      {
+        title:"Chapters",
+        link:"/chapters",
+      },
+      {
+        title:"Topic",
+        link:"/submodules",
+      },
+      {
+        title:"Logout",
+        link:"/",
+      },
     ],
   },
 ];

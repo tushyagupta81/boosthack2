@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import { lessons, submodules } from "../constants/index.js";
 import { Nav } from "../sections/index.js";
-
+import { Link } from "react-router-dom";
 const Post = () => {
   let id = useParams()["id"];
   let subId = useParams()["subId"];
@@ -21,7 +21,7 @@ const Post = () => {
   }
   return (
     <>
-      <section>
+     <section>
         <header className="text-gray-600 body-font">
           <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
             <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
@@ -41,20 +41,17 @@ const Post = () => {
             </a>
             <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
               <a className="mr-5 hover:text-gray-900 hover:cursor-pointer">
-                Home
+                <Link to="/dashboard">Dashboard</Link>
               </a>
               <a className="mr-5 hover:text-gray-900 hover:cursor-pointer">
-                Second Link
+                <Link to="/chapters">Chapters</Link>
               </a>
               <a className="mr-5 hover:text-gray-900 hover:cursor-pointer">
-                Third Link
-              </a>
-              <a className="mr-5 hover:text-gray-900 hover:cursor-pointer">
-                Fourth Link
+                <Link to="/submodules">Topic</Link>
               </a>
             </nav>
             <button className="inline-flex items-center bg-gray-100 border-2 py-1 px-3 focus:outline-none hover:bg-red-600 hover:text-white rounded text-base  mt-4 md:mt-0">
-              Log Out
+              <Link to="/app">Log Out</Link>
               <svg
                 fill="none"
                 stroke="currentColor"
