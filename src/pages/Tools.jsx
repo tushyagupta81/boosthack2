@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Tools = () => {
   return (
     <>
@@ -12,7 +14,7 @@ const Tools = () => {
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 strokeWidth="2"
-                className="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full"
+                className="w-10 h-10 text-white p-2 bg-blue-500 rounded-full"
                 viewBox="0 0 24 24"
               >
                 <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
@@ -21,16 +23,13 @@ const Tools = () => {
             </a>
             <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
               <a className="mr-5 hover:text-gray-900 hover:cursor-pointer">
-                Home
+                <Link to="/dashboard">Dashboard</Link>
               </a>
               <a className="mr-5 hover:text-gray-900 hover:cursor-pointer">
-                Second Link
+                <Link to="/chapters">Chapters</Link>
               </a>
               <a className="mr-5 hover:text-gray-900 hover:cursor-pointer">
-                Third Link
-              </a>
-              <a className="mr-5 hover:text-gray-900 hover:cursor-pointer">
-                Fourth Link
+                <Link to="/submodules">Topic</Link>
               </a>
             </nav>
             <button className="inline-flex items-center bg-gray-100 border-2 py-1 px-3 focus:outline-none hover:bg-red-600 hover:text-white rounded text-base  mt-4 md:mt-0">
@@ -57,7 +56,7 @@ const Tools = () => {
             <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">
               Budgeting Tools
             </h1>
-            <div className="h-1 w-20 bg-indigo-500 rounded"></div>
+            <div className="h-1 w-20 bg-blue-500 rounded"></div>
           </div>
           {/* <p className="lg:w-1/2 w-full leading-relaxed text-gray-500">
             Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
@@ -88,7 +87,7 @@ const Tools = () => {
                       jianbing microdosing tousled waistcoat.
                     </p>
                     <div className="flex items-center flex-wrap ">
-                      <a className="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">
+                      <a className="text-blue-500 inline-flex items-center md:mb-2 lg:mb-0">
                         Learn More
                         <svg
                           className="w-4 h-4 ml-2"
@@ -155,7 +154,7 @@ const Tools = () => {
                       jianbing microdosing tousled waistcoat.
                     </p>
                     <div className="flex items-center flex-wrap">
-                      <a className="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">
+                      <a className="text-blue-500 inline-flex items-center md:mb-2 lg:mb-0">
                         Learn More
                         <svg
                           className="w-4 h-4 ml-2"
@@ -222,7 +221,7 @@ const Tools = () => {
                       jianbing microdosing tousled waistcoat.
                     </p>
                     <div className="flex items-center flex-wrap ">
-                      <a className="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">
+                      <a className="text-blue-500 inline-flex items-center md:mb-2 lg:mb-0">
                         Learn More
                         <svg
                           className="w-4 h-4 ml-2"
@@ -295,7 +294,7 @@ const Tools = () => {
                       jianbing microdosing tousled waistcoat.
                     </p>
                     <div className="flex items-center flex-wrap ">
-                      <a className="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">
+                      <a className="text-blue-500 inline-flex items-center md:mb-2 lg:mb-0">
                         Learn More
                         <svg
                           className="w-4 h-4 ml-2"
@@ -362,7 +361,7 @@ const Tools = () => {
                       jianbing microdosing tousled waistcoat.
                     </p>
                     <div className="flex items-center flex-wrap">
-                      <a className="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">
+                      <a className="text-blue-500 inline-flex items-center md:mb-2 lg:mb-0">
                         Learn More
                         <svg
                           className="w-4 h-4 ml-2"
@@ -429,7 +428,7 @@ const Tools = () => {
                       jianbing microdosing tousled waistcoat.
                     </p>
                     <div className="flex items-center flex-wrap ">
-                      <a className="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">
+                      <a className="text-blue-500 inline-flex items-center md:mb-2 lg:mb-0">
                         Learn More
                         <svg
                           className="w-4 h-4 ml-2"
@@ -493,7 +492,7 @@ const Tools = () => {
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 strokeWidth="2"
-                className="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full"
+                className="w-10 h-10 text-white p-2 bg-blue-500 rounded-full"
                 viewBox="0 0 24 24"
               >
                 <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
@@ -501,15 +500,7 @@ const Tools = () => {
               <span className="ml-3 text-xl">CoinEd</span>
             </a>
             <p className="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">
-              © 2024 CoinEd —
-              <a
-                href="https://twitter.com/knyttneve"
-                className="text-gray-600 ml-1"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                @knyttneve
-              </a>
+              © 2024 CoinEd 
             </p>
             <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
               <a className="text-gray-500">
