@@ -20,7 +20,7 @@ function Nav({ page }) {
       <nav className="flex justify-between items-center mx-auto">
         <div className="ml-5 cursor-pointer">
           <Link to="/">
-          <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+            <div className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -34,7 +34,7 @@ function Nav({ page }) {
                 <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
               </svg>
               <span className="ml-3 text-xl">CoinEd</span>
-            </a>
+            </div>
           </Link>
         </div>
         <ul
@@ -63,8 +63,7 @@ function Nav({ page }) {
         </ul>
         <div className="flex gap-5 mr-5 max-md:hidden text-xl cursor-pointer">
           {page === "home" && <Link to="/signin">Login</Link>}
-          {page === "signin" && <Link to="/signup">Signup</Link>}
-          {page === "signup" && <Link to="/signin">Signin</Link>}
+          {page !== "home" && <Link to="/">Logout</Link>}
         </div>
         <div className="hidden max-md:block">
           <button aria-controls="nav-items" aria-expanded="false">
@@ -89,7 +88,7 @@ function Nav({ page }) {
             }
           })}
           <li className="cursor-pointer">
-            <Link to={"./login"}>Login</Link>
+            <Link to={"/signin"}>Login</Link>
           </li>
         </ul>
       </div>

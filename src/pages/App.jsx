@@ -1,20 +1,19 @@
 import { Nav, Hero, About, JoinUs, Footer } from "../sections/index.js";
-import React, { useState } from "react";
 
 function App() {
   return (
     <main className="relative">
       <Nav page="home" />
-      <section className="">
+      <section id="home">
         <Hero />
       </section>
-      <section>
+      <section id="about-us">
         <About />
       </section>
-      <section>
+      <section id="join-us">
         <JoinUs />
       </section>
-      <section>
+      <section id="contact-us">
         <Footer />
       </section>
     </main>

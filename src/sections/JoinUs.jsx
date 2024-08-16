@@ -2,10 +2,7 @@ import { Button } from "../components/index.js";
 const JoinUs = () => {
   return (
     <>
-      <div
-        className="flex ml-5 mt-10 mr-5 max-md:flex-col max-md:mb-4"
-        id="join-us"
-      >
+      <div className="flex ml-5 mt-10 mr-5 max-md:flex-col max-md:mb-4">
         <h2 className="mr-4 text-blue-600 p-2 text-3xl font-bold whitespace-nowrap min-w-[141.25px]">
           Join Us
         </h2>

@@ -6,7 +6,7 @@ const dashboard = [
   },
   {
     id: 2,
-    title: "Trials",
+    title: "Tools",
     info: [
       "Try out your knowledge on these hands-on games replecating the reallife.",
     ],

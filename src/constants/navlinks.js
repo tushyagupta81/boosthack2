@@ -18,21 +18,57 @@ const navlinks = [
         title: "Contact",
         link: "#contact-us",
       },
+      // {
+      //   title: "Dashboard",
+      //   link: "/dashboard",
+      // },
+      // {
+      //   title:"Chapters",
+      //   link:"/chapters",
+      // },
+      // {
+      //   title:"Topic",
+      //   link:"/submodules",
+      // },
+      // {
+      //   title:"Logout",
+      //   link:"/",
+      // },
+    ],
+  },
+  {
+    pageName: "chapters",
+    links: [
       {
         title: "Dashboard",
         link: "/dashboard",
       },
+    ],
+  },
+  {
+    pageName: "submodules",
+    links: [
       {
-        title:"Chapters",
-        link:"/chapters",
+        title: "Dashboard",
+        link: "/dashboard",
       },
+    ],
+  },
+  {
+    pageName: "posts",
+    links: [
       {
-        title:"Topic",
-        link:"/submodules",
+        title: "Dashboard",
+        link: "/dashboard",
       },
+    ],
+  },
+  {
+    pageName: "tools",
+    links: [
       {
-        title:"Logout",
-        link:"/",
+        title: "Dashboard",
+        link: "/dashboard",
       },
     ],
   },
