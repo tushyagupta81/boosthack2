@@ -1,8 +1,18 @@
-# React + Vite
+# CoidED
+> A finiance app for learning more about finances like stocks and trading
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![HomePage]()
+![Dashboard]()
+![Chapters]()
+![ContentExample]()
 
-Currently, two official plugins are available:
+## Requirements
+- node v23.3.0
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Installation
+```bash
+git clone https://github.com/tushyagupta81/boosthack2.git ./coinED
+cd coinED
+npm i
+npm run dev
+```
